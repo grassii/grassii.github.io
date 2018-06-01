@@ -190,18 +190,12 @@ $("#container").click(function(){
   /*email*/
 
   $('#item-2-email').dblclick(function() {
-      alert("it's in your clipboard now");
+      alert("check your clipboard");
       var $temp = $("<input>");
       $("body").append($temp);
       $temp.val($("#email-address").text()).select();
       document.execCommand("copy");
       $temp.remove();
-  });
-
-  $('#item-2-email').click(function(){
-      $('.column-3-holder').hide();
-      $('#item-2-twitter').siblings().removeClass("old-selected");
-      $('#item-2-twitter').siblings().children(".item-arrow-grey").hide();
   });
 
 
@@ -220,7 +214,20 @@ $("#container").click(function(){
  window.open('https://steamcommunity.com/id/grassii');
   });    
 
- 
+  $('#item-2-discord').dblclick(function(){
+alert("i don't have my own server, sorry. but the name has been copied to your clipboard!");
+    var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($("#discord-name").text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+      
+  }); 
+    
+    
+ $('#item-2-spotify').dblclick(function(){
+ window.open('spotify:user:qvsfspob44tpcds8jh8xrwvzs:playlist:1jBuDFkDQf2xIZufQ4MVHz');
+  }); 
 
   /* column-3 */
 
