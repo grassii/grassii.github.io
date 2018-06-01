@@ -3,6 +3,48 @@
 $(document).ready(function() {
 
 
+    
+    
+  $('.folder').click(function() {
+      
+    if(!$(".folder-opener").hasClass("active-2")){
+        
+        $(".folder-opener").addClass("active-2");    
+        $(".folder-opener").removeClass("inactive-2");
+        $(".folder-opener-text").addClass("t-active-2");
+        $(".folder-opener-text").removeClass("t-inactive-2");
+        
+    }  
+      
+    else if($(".folder-opener").hasClass("active-2")){
+        
+     $('.folder').dblclick(function() {  
+
+    $(".window").css("display","block");
+    $(".window").addClass("animated zoomIn");
+     });
+        
+        
+    }  
+    
+ 
+    
+    
+  });
+    
+    
+    
+$("#container").click(function(){
+    
+    $(".folder-opener").removeClass("active-2");
+     $(".folder-opener-text").removeClass("t-active-2");
+    
+});
+    
+  
+    
+    
+
   $('.item').click(function() {
     $(this).addClass("selected");
     $(this).siblings().removeClass("selected");

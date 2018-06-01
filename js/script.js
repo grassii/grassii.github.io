@@ -1,7 +1,11 @@
 
 
+
 $(document).ready(function() {
 
+    
+    
+    
   $('.window').children('.buttons').mouseenter(function(){
     $(this).children('.buttons_hover_yes').show();
   });
@@ -24,6 +28,7 @@ $(document).ready(function() {
 
   $(function() {
     $(".window").draggable({handle: ".handle"});
+    $(".folder").draggable();
     $(".window").resizable({
       minWidth: 300,
       minHeight: 200,
