@@ -20,8 +20,8 @@ $(document).ready(function() {
         
      $('.folder').dblclick(function() {  
 
-    $(".window").css("display","block");
-    $(".window").addClass("animated zoomIn");
+    $("#window-1").css("display","block");
+    $("#window-1").addClass("animated zoomIn");
      });
         
         
@@ -167,7 +167,13 @@ $("#container").click(function(){
 
 
   $('#about').dblclick(function() {
-    alert("20/m/austria, graphics design graduate, video editor, 3d artist, web designer")
+    
+      
+      
+    $("#window-2").css("display","block");
+    $("#window-2").addClass("animated zoomIn");
+      
+      
   });
 
   /* Contact */
