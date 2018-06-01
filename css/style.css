@@ -116,6 +116,9 @@ body{
    -webkit-animation-duration: 0.2s!important;
 }
 
+
+
+
 .top{
 	z-index:5000;
 }
@@ -499,8 +502,14 @@ body{
 
 #window-2{
 	display:none;
-
+    margin-top:10px;
+    margin-left:10px;
+    width:367px;
+    height:245px;
 }
+
+
+
 
 /* window-3 */
 
@@ -589,4 +598,11 @@ outline-style: solid;
     
     border-radius: 3px;
     
+}
+
+
+
+.text-edit{
+    padding:7px;
+    margin-right: 10px;
 }
