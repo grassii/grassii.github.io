@@ -11,14 +11,24 @@ $(document).ready(function() {
   });
 
   $('.window').children('.buttons').mouseleave(function(){
-    $(this).children('.buttons_hover_yes').hide();
+    $(this).children('.buttons_hover_yes').css("display","none")
   });
 
 
   $('.button-close').click(function(){
-    $(this).parents().parents('.window').hide();
+    $(this).parents().parents('.window').removeClass("animated zoomIn").addClass("animated zoomOut");
+      
+    setTimeout(function(){
+        
+    $('.window').css("display","none")
+        
+    },200)
+    
+    
     if ($(this).parents().parents('.window').attr("id") == "window-3") $("#window-3 .window-content").attr("src", "");
     $('.show').show();
+      
+    
   });
 
   $('.show').click(function(){

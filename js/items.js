@@ -21,7 +21,7 @@ $(document).ready(function() {
      $('.folder').dblclick(function() {  
 
     $("#window-1").css("display","block");
-    $("#window-1").addClass("animated zoomIn");
+    $("#window-1").removeClass("animated zoomOut").addClass("animated zoomIn");
      });
         
         
