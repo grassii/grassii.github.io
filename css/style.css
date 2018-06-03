@@ -562,7 +562,7 @@ outline-style: solid;
 					user-select: text;
 
     animation: Pulse;
-    animation-duration: 3s;
+    animation-duration: 4s;
     
     animation-iteration-count: infinite;
     
@@ -577,7 +577,7 @@ outline-style: solid;
     
     35% {opacity:0}
     
-    50% {opacity:0.35}
+    50% {opacity:0.2}
     
     65% {opacity:0}
     
